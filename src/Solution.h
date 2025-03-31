@@ -23,6 +23,7 @@ public:
     void sumar_beneficio(int beneficio);
     int getPesoTotal() const;
     int getBeneficioTotal() const;
+    std::vector<int> returnearItems() const;
     
 };
 

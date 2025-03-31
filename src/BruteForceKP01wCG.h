@@ -10,7 +10,7 @@ private:
 
 public:
     BruteForceKP01wCG();
-    Solution solve(const KP01withCGInstance& instance);
+    Solution solve(const KP01withCGInstance& instance, Solution solucion_actual, int i );
 };
 
 #endif // BRUTEFORCEKP01WCG_H

@@ -26,6 +26,9 @@ int main(int argc, char* argv[]) {
     std::cout << instance.getNumItems() << std::endl;
     std::cout << instance.getCapacity() << std::endl;
 
+    int i=0;
+    Solution solucion(0);
+
     Solution solution(instance.getNumItems());
 
     if (algorithm == "dp") {
@@ -36,7 +39,7 @@ int main(int argc, char* argv[]) {
         solution = solver_bt.solve(instance);
     } else if (algorithm == "bf") {
         BruteForceKP01wCG solver_bf;
-        solution = solver_bf.solve(instance);
+        solution = solver_bf.solve(instance,solucion, i);
     } else {
         std::cerr << "Unknown algorithm: " << algorithm << "\n";
         return 1;

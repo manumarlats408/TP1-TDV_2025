@@ -26,6 +26,8 @@ public:
     int getProfit(int index) const;
     int getNumItems() const;
     int getCapacity() const;
+    int getNumConflictos() const;
+    Grafo getGrafoConflictos() const;
     void addConflict(int item1, int item2);
     void removeConflict(int item1, int item2);
     void readInstanceFromFile(const std::string& filename);

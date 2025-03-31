@@ -38,48 +38,39 @@ void KP01withCGInstance::removeConflict(int item1, int item2) {
 
 void KP01withCGInstance::readInstanceFromFile(const std::string& filename) {
     std::ifstream file(filename);
-    // if (!file) {
-    //     std::cerr << "Error: No se pudo abrir el archivo " << filename << "\n";
-    //     return;
-    // }
-
-    // std::cout << "Archivo abierto correctamente: " << filename << std::endl;
-
-    // Leer número de ítems y capacidad
     file >> numItems >> capacidad;
-    // std::cout << "Número de ítems: " << numItems << ", Capacidad: " << capacidad << std::endl;
 
-    // Leer pesos
     items_peso.resize(numItems);
+    items_beneficio.resize(numItems);
+
     for (int i = 0; i < numItems; i++) {
         file >> items_peso[i];
     }
-    std::cout << "Pesos: ";
-    for (int w : items_peso) std::cout << w << " ";
-    std::cout << std::endl;
 
-    // Leer beneficios
-    items_beneficio.resize(numItems);
     for (int i = 0; i < numItems; i++) {
         file >> items_beneficio[i];
     }
-    std::cout << "Beneficios: ";
-    for (int b : items_beneficio) std::cout << b << " ";
-    std::cout << std::endl;
 
-    // Leer cantidad de conflictos
     file >> numConflictos;
-    // std::cout << "Número de conflictos: " << numConflictos << std::endl;
 
-    // Leer pares de conflictos
+    std::vector<std::tuple<int, int>> conflictos_lista;
     for (int i = 0; i < numConflictos; i++) {
         int u, v;
         file >> u >> v;
-        // std::cout << "Conflicto: " << u << " - " << v << std::endl;
+        conflictos_lista.emplace_back(u, v);
     }
+
+    conflictos = Grafo(numConflictos, conflictos_lista);
 
     file.close();
 }
 
+int KP01withCGInstance::getNumConflictos() const{
+    return numConflictos;
+}
+
+Grafo KP01withCGInstance::getGrafoConflictos() const{
+    return conflictos;
+}
 
 //SACAR TODOS LOS COUT!!!!!

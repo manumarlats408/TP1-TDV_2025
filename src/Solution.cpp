@@ -16,6 +16,10 @@ bool Solution::contains(int item) const {
     return std::find(Elem.begin(), Elem.end(), item) != Elem.end();
 }
 
+std::vector<int> Solution::returnearItems() const{
+    return Elem;
+}
+
 void Solution::printSolution() const {
     std::cout << "Elementos: ";
     for (int elem : Elem) {

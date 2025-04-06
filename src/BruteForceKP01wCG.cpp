@@ -3,7 +3,7 @@
 
 BruteForceKP01wCG::BruteForceKP01wCG() {}
 
-bool TieneConflicto(const Solution& solucion, const KP01withCGInstance& instance) {
+static bool TieneConflicto(const Solution& solucion, const KP01withCGInstance& instance) {
     const Grafo& grafo = instance.getGrafoConflictos();
     const std::vector<int>& items = solucion.returnearItems();
 
@@ -20,7 +20,7 @@ bool TieneConflicto(const Solution& solucion, const KP01withCGInstance& instance
 }
 
 
-Solution mejor_sol(const Solution& solucion1, const Solution& solucion2, const KP01withCGInstance& instance, int i) {
+static Solution mejor_sol(const Solution& solucion1, const Solution& solucion2, const KP01withCGInstance& instance, int i) {
     
 if(!TieneConflicto(solucion1,instance)&& !TieneConflicto(solucion2,instance)){
     if ((solucion1.getPesoTotal() <= instance.getCapacity()) && 

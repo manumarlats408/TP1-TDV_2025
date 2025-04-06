@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
         solution = solver_dp.solve(instance);
     } else if (algorithm == "bt") {
         BacktrackingKP01wCG solver_bt;
-        solution = solver_bt.solve(instance);
+        solution = solver_bt.solve(instance, solucion, i);
     } else if (algorithm == "bf") {
         BruteForceKP01wCG solver_bf;
         solution = solver_bf.solve(instance,solucion, i);

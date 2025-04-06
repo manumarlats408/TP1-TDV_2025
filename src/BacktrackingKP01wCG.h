@@ -10,7 +10,7 @@ private:
 
 public:
     BacktrackingKP01wCG();
-    Solution solve(const KP01withCGInstance& instance);
+    Solution solve(const KP01withCGInstance& instance, Solution solucion_actual, int i);
 };
 
 #endif // BACKTRACKINGKP01_H

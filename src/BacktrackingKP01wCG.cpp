@@ -71,20 +71,20 @@ Solution BacktrackingKP01wCG::solve(const KP01withCGInstance& instance, Solution
     }
 
     // Explorar SIN incluir el item actual
-    Solution solucion_sin_item = solve(instance, solucion_actual, i + 1);  // llamada recursiva
+    Solution solucion_sin_item = solve(instance, solucion_actual, i + 1);   // llamada recursiva. O(2^n), n siendo numero de items *
 
     // Explorar incluyendo el item actual
     Solution solucion_con_item = solucion_actual; //O(n)
     solucion_con_item.addItem(i); //O(1)
     solucion_con_item.sumar_peso(instance.getWeight(i)); //O(1)
     solucion_con_item.sumar_beneficio(instance.getProfit(i)); //O(1)
-    solucion_con_item = solve(instance, solucion_con_item, i + 1); // llamada recursiva
+    solucion_con_item = solve(instance, solucion_con_item, i + 1);  // llamada recursiva. O(2^n), n siendo numero de items *
 
     // Retorna la mejor solución entre ambas
     return mejor_sol(solucion_sin_item, solucion_con_item, instance); //O(n²)
 }
 
-//O(1) + O(1) + O(n²) + O(1) + O(n) + O(n²) + O(n) + O(1) + O(n) + O(1) + O(1) + O(1) + O(1) + O(n²)
+//O(1) + O(1) + O(n²) + O(1) + O(n) + O(n²) + O(n) + O(1) + O(n) + O(1) + O(1) + O(1) + O(1) + O(2ⁿ)*O(n²)
 //= O(n² + n + 1)
 // O(n²)
 //O(2ⁿ * n²) por los dos llamados recursivos

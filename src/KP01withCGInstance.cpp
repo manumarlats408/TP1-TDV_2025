@@ -73,4 +73,3 @@ Grafo KP01withCGInstance::getGrafoConflictos() const{
     return conflictos;
 }
 
-//SACAR TODOS LOS COUT!!!!!

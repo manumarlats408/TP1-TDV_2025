@@ -74,23 +74,20 @@ Solution BruteForceKP01wCG::solve(const KP01withCGInstance& instance, Solution s
     }
 
     // Explorar SIN incluir el item actual
-    Solution solucion_sin_item = solve(instance, solucion_actual, i + 1); // llamada recursiva. O(2^n), n siendo numero de items
+    Solution solucion_sin_item = solve(instance, solucion_actual, i + 1); // llamada recursiva
 
     // Explorar incluyendo el item actual
     Solution solucion_con_item = solucion_actual; //O(n)
     solucion_con_item.addItem(i); // O(1)
     solucion_con_item.sumar_peso(instance.getWeight(i)); // O(1)
     solucion_con_item.sumar_beneficio(instance.getProfit(i)); // O(1)
-    solucion_con_item = solve(instance, solucion_con_item, i + 1); // llamada recursiva.  O(2^n), n siendo numero de items
+    solucion_con_item = solve(instance, solucion_con_item, i + 1); // llamada recursiva
 
     // Retorna la mejor solución entre ambas
-    return mejor_sol(solucion_sin_item, solucion_con_item, instance, i); // O(n²)
+    return mejor_sol(solucion_sin_item, solucion_con_item, instance, i); // O(1)
 }
 
-//O(1) + O(1) + O(1) + O(1) + O(1) + O(n) + O(1) + O(1) + O(1) + O(1) + O(2ⁿ) + O(2ⁿ) * O(n²)
-// O(1 + n) + O(2ⁿ) * O(n²)
-// O(n) + O(2ⁿ) * O(n²)
-//O(2ⁿ * n²).
-
-//complejidad en fuerza bruta:
-// cant de ramas/iteraciones 2^ramas + operaciones en hijos
+//O(1) + O(1) + O(1) + O(1) + O(1) + O(n) + O(1) + O(1) + O(1) + O(1)
+// O(1 + n)
+// O(n)
+//O(2ⁿ * n) porque tiene dos llamados recursivos

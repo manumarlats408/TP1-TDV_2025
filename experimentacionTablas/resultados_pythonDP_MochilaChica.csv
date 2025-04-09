@@ -1,13 +1,4 @@
 Archivo,Algoritmo,Peso,Beneficio,Items,Tiempo (s),Estado
-Mochila Apretada 10 Items,dp,258485,137932,2,1.0691,OK
-Mochila Apretada 20 Items,dp,770684,401929,14 5,2.0613,OK
-Mochila Apretada 30 Items,dp,804907,419256,20 6,3.0402,OK
-Mochila Apretada 40 Items,dp,944337,495245,38 16 2,4.0862,OK
-Mochila Apretada 50 Items,dp,997512,522727,12 7 2,5.0274,OK
-Mochila Apretada 60 Items,dp,943538,486124,55 51 12,6.0331,OK
-Mochila Apretada 70 Items,dp,923206,475839,58 9,7.065,OK
-Mochila Apretada 80 Items,dp,999092,510055,50 15 14,8.2871,OK
-Mochila chica 10 Items,dp,6007,8422,9 8 7 4 1 0,0.051,OK
 Mochila chica 20 Items,dp,53226,69810,19 18 17 16 15 14 10 9 5 4 3 0,0.247,OK
 Mochila chica 30 Items,dp,147863,200050,28 27 26 25 24 21 20 18 17 13 12 11 10 9 7 5 4 2 1 0,0.9028,OK
 Mochila chica 40 Items,dp,289526,399432,39 35 32 29 28 27 25 22 21 19 18 17 16 15 14 13 12 11 10 9 8 7 6 3 2 0,2.3317,OK

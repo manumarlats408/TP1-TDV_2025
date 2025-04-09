@@ -1,25 +1,14 @@
 Archivo,Algoritmo,Peso,Beneficio,Items,Tiempo (s),Estado
-20 Items Cycle,bf,31394,39467,"0 2 4 6 8 10 12 14 16 18 ",5.23191,OK
 20 Items Star,bf,22987,31303,"1 2 7 9 10 11 14 15 16 18 ",4.37239,OK
-22 Items Cycle,bf,25137,34286,"1 3 5 7 10 12 14 16 18 20 ",19.5693,OK
 22 Items Star,bf,29309,39986,"3 4 5 6 9 11 13 16 17 19 20 21 ",18.8223,OK
-24 Items Cycle,bf,24166,31337,"0 2 4 6 9 12 15 17 19 22 ",79.8783,OK
 24 Items Star,bf,41005,56146,"0 4 5 6 7 8 9 11 13 16 18 ",85.1519,OK
-26 Items Cycle,bf,27362,32900,"1 3 5 7 9 11 14 17 19 21 23 ",345.773,OK
 26 Items Star,bf,28466,40234,"3 4 5 6 9 12 14 15 16 20 21 24 ",341.741,OK
-28 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 28 Items Star,bf,-1,-1,"",900,TIMEOUT
-30 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 30 Items Star,bf,-1,-1,"",900,TIMEOUT
-32 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 32 Items Star,bf,-1,-1,"",900,TIMEOUT
-34 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 34 Items Star,bf,-1,-1,"",900,TIMEOUT
-36 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 36 Items Star,bf,-1,-1,"",900,TIMEOUT
-38 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 38 Items Star,bf,-1,-1,"",900,TIMEOUT
-40 Items Cycle,bf,-1,-1,"",900,TIMEOUT
 40 Items Star,bf,-1,-1,"",900,TIMEOUT
 
 

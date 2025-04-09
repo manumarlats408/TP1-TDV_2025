@@ -1,0 +1,12 @@
+Archivo,Algoritmo,Peso,Beneficio,Items,Tiempo (s),Estado
+20 Items Star,bt,22987,31303,1 2 7 9 10 11 14 15 16 18,3.6111,OK
+22 Items Star,bt,29309,39986,3 4 5 6 9 11 13 16 17 19 20 21,20.3734,OK
+24 Items Star,bt,41005,56146,0 4 5 6 7 8 9 11 13 16 18,136.7622,OK
+26 Items Star,bt,28466,40234,3 4 5 6 9 12 14 15 16 20 21 24,427.4488,OK
+28 Items Star,bt,-1,-1,,899.9846,TIMEOUT
+30 Items Star,bt,-1,-1,,900,TIMEOUT
+32 Items Star,bt,-1,-1,,900,TIMEOUT
+34 Items Star,bt,-1,-1,,900,TIMEOUT
+36 Items Star,bt,-1,-1,,900,TIMEOUT
+38 Items Star,bt,-1,-1,,900,TIMEOUT
+40 Items Star,bt,-1,-1,,900

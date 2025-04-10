@@ -9,8 +9,8 @@ from Solution import Solution
 from DynamicProgrammingKP01 import DynamicProgrammingKP01
 from BacktrackingKP01wCG import BacktrackingKP01wCG
 
-TIMEOUT_SECONDS = 900
-CSV_FILE = "resultados_pythonDP.csv"
+TIMEOUT_SECONDS = 1800
+CSV_FILE = "resultados_pythonBT.csv"
 
 def solve_instance(algorithm, instance_path, queue):
     instance = KP01withCGInstance()

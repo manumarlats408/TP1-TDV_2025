@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 
     std::string algorithm = argv[1];
     std::string instance_name = argv[2];
-    const int TIMEOUT_SECONDS = 900;
+    const int TIMEOUT_SECONDS = 1800;
 
     KP01withCGInstance instance(0, 0);
     instance.readInstanceFromFile(instance_name);
